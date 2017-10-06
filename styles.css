@@ -164,45 +164,45 @@ body {
   }
 }
 .b3 {
-  top: 50%;
-  margin-left: 1400px;
+  top: 35%;
+  margin-left: 800px;
   opacity: 0;
   animation-name: bubble-two;
   animation-duration: 8s;
-  animation-iteration-count: infinite;
-  animation-delay: 10s;
+  animation-iteration-count: 1;
+  animation-delay: 25s;
 }
 @-webkit-keyframes bubble-two {
   0%{
-    margin-left: 1400px
+    top: 35%;
+    margin-left: 800px
     opacity: 0;
   }
   15% {
     opacity: 1;
-    margin-left: 1200px
   }
   25% {
-    top: -10px;
+    top: 20%;
     opacity: 0;
+    margin-left: 1000px
   }
   30% {
-    top: 50%;
+    top: 40%;
     opacity: 0;
-    margin-left: 1250px
+    margin-left: 700px
   }
   45% {
     opacity: 1;
-    margin-left: 1100px
   }
   55% {
-    top: 20%;
+    top: 10%;
     opacity: 0;
-    margin-left: 1150px
+    margin-left: 800px
   }
   60% {
-    top: 60%;
+    top: 35%;
     opacity: 0;
-    margin-left: 1100px
+    margin-left: 600px
   }
   75% {
     opacity: 1;
@@ -210,41 +210,61 @@ body {
   85% {
     top: -10px;
     opacity: 0;
-    margin-left: 1000px
+    margin-left: 500px
   }
   86% {
     top: 50%;
     opacity: 0;
-    margin-left: 1060px
+    margin-left: 500px
   }
   95% {
     opacity: 1;
-    margin-left: 1100px
   }
   100% {
     top: 20%;
     opacity: 0;
-    margin-left: 1100px
+    margin-left: 800px
   }
 }
 
 .b4 {
-  top: 50%;
-  margin-left: 1400px;
+  top: 40%;
+  margin-left: 600px;
   opacity: 0;
-  animation-name: bubble;
+  animation-name: bubble-three;
   animation-duration: 15s;
-  animation-iteration-count: infinite;
-  animation-delay: 15s;
+  animation-iteration-count: 1;
+  animation-delay: 20s;
 }
 @-webkit-keyframes bubble-three {
   0% {
-    margin-left: 1400px;
+    top: 40%;
+    margin-left: 600px;
+    opacity: 0;
+  }
+  20% {
+    top: 40%;
+    margin-left: 800px;
+    opacity: 1;
+  }
+  40% {
+    top: 40%;
+    margin-left: 500px;
+    opacity: 0;
+  }
+  60% {
+    top: 40%;
+    margin-left: 300px;
+    opacity: 1;
+  }
+  80% {
+    top: 40%;
+    margin-left: 400px;
     opacity: 0;
   }
   100% {
     top: 0%;
-    margin-left: 1200px;
+    margin-left: 800px;
     opacity: 1;
   }
 }
