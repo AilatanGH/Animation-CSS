@@ -1,0 +1,606 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: #334d5c;
+  z-index: -4;
+}
+
+/* SUBMARINO */
+
+.submarine {
+  width: 400px;
+  height: 50%;
+  align-items: center;
+  overflow: hidden;
+  background-image: url(images/submarino.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 40%;
+  z-index: 4;
+  margin-left: 1500px;
+  animation-name: submarine;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@-webkit-keyframes submarine {
+  0% {
+    margin-left: 1500px;
+  }
+  50% {
+    margin-left: 1000px;
+    transform: scale(1.5);
+  }
+  75% {
+    margin-left: 500px;
+    transform: scale(1);
+  }
+  100% {
+    margin-left: -500px;
+    transform: scale(1.5);
+  }
+}
+
+/* BURBUJAS */
+
+.bubble {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  opacity: 0;
+  background-color: rgba(78,111,124, 0.5);
+}
+
+.b1 {
+  top: 40%;
+  margin-left: 1400px;
+  opacity: 0;
+  animation-name: bubble;
+  animation-duration: 20s;
+  animation-iteration-count: 1;
+  animation-delay: 5s;
+}
+@-webkit-keyframes bubble {
+  0%{
+    margin-left: 1400px
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+    margin-left: 1200px
+  }
+  25% {
+    top: -10px;
+    opacity: 0;
+  }
+  30% {
+    top: 40%;
+    opacity: 0;
+    margin-left: 1250px
+  }
+  45% {
+    opacity: 1;
+    margin-left: 1100px
+  }
+  55% {
+    top: 20%;
+    opacity: 0;
+    margin-left: 1150px
+  }
+  60% {
+    top: 60%;
+    opacity: 0;
+    margin-left: 1100px
+  }
+  75% {
+    opacity: 1;
+  }
+  85% {
+    top: -10px;
+    opacity: 0;
+    margin-left: 1000px
+  }
+  86% {
+    top: 40%;
+    opacity: 0;
+    margin-left: 1060px
+  }
+  95% {
+    opacity: 1;
+    margin-left: 1100px
+  }
+  100% {
+    top: 20%;
+    opacity: 0;
+    margin-left: 1100px
+  }
+}
+
+.b2 {
+  top: 40%;
+  margin-left: 1400px;
+  opacity: 0;
+  animation-name: bubble-one;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  animation-delay: 8s;
+}
+@-webkit-keyframes bubble-one {
+  0%{
+    margin-left: 1400px
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+    margin-left: 1200px
+  }
+  25% {
+    top: -10px;
+    opacity: 0;
+  }
+  50% {
+    top: 50%;
+    opacity: 0;
+    margin-left: 1200px
+  }
+  75% {
+    opacity: 1;
+    margin-left: 1100px
+  }
+  100% {
+    top: 20%;
+    opacity: 0;
+    margin-left: 1100px
+  }
+}
+.b3 {
+  top: 50%;
+  margin-left: 1400px;
+  opacity: 0;
+  animation-name: bubble-two;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-delay: 10s;
+}
+@-webkit-keyframes bubble-two {
+  0%{
+    margin-left: 1400px
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+    margin-left: 1200px
+  }
+  25% {
+    top: -10px;
+    opacity: 0;
+  }
+  30% {
+    top: 50%;
+    opacity: 0;
+    margin-left: 1250px
+  }
+  45% {
+    opacity: 1;
+    margin-left: 1100px
+  }
+  55% {
+    top: 20%;
+    opacity: 0;
+    margin-left: 1150px
+  }
+  60% {
+    top: 60%;
+    opacity: 0;
+    margin-left: 1100px
+  }
+  75% {
+    opacity: 1;
+  }
+  85% {
+    top: -10px;
+    opacity: 0;
+    margin-left: 1000px
+  }
+  86% {
+    top: 50%;
+    opacity: 0;
+    margin-left: 1060px
+  }
+  95% {
+    opacity: 1;
+    margin-left: 1100px
+  }
+  100% {
+    top: 20%;
+    opacity: 0;
+    margin-left: 1100px
+  }
+}
+
+.b4 {
+  top: 50%;
+  margin-left: 1400px;
+  opacity: 0;
+  animation-name: bubble;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-delay: 15s;
+}
+@-webkit-keyframes bubble-three {
+  0% {
+    margin-left: 1400px;
+    opacity: 0;
+  }
+  100% {
+    top: 0%;
+    margin-left: 1200px;
+    opacity: 1;
+  }
+}
+
+/* PECES */
+
+.fish-red {
+  width: 30px;
+  height: 30px;
+  top: 60%;
+  left: -50px;
+  background-image: url(images/fishred.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 2;
+  animation: fish-one;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-delay: 8s;
+}
+@-webkit-keyframes fish-one {
+  0%, 50%, 100% {
+    top: 60%;
+    transform: scale(1);
+    transform: rotate(15deg);
+  }
+  25%, 75% {
+    top: 30%;
+    transform: scale(0.8);
+    transform: rotate(-10deg);
+  }
+  0% {
+    left: -50px;
+  }
+  100% {
+    left: 1500px;
+  }
+}
+
+.fish-blue {
+  width: 60px;
+  height: 50px;
+  top: 60%;
+  right: -50px;
+  background-image: url(images/fishblue.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 4;
+  animation: fish-two;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes fish-two {
+  0%, 50%, 100% {
+    top: 60%;
+    transform: scale(1);
+    transform: rotate(-5deg);
+  }
+  25%, 75% {
+    top: 80%;
+    transform: scale(0.5);
+    transform: rotate(-10deg);
+  }
+  0% {
+    right: -60px;
+  }
+  100% {
+    right: 1600px;
+  }
+}
+
+.fish-globe {
+  width: 50px;
+  height: 50px;
+  top: 60%;
+  right: -50px;
+  background-image: url(images/fishglobe.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 2;
+  animation: fish-three;
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+  animation-delay: 8s;
+}
+@-webkit-keyframes fish-three {
+  0% {
+    top: 60%;
+    right: -50px;
+    transform: scale(1);
+    transform: rotate(10deg);
+  }
+  25% {
+    top: 30%;
+  }
+  75% {
+    top: 60%;
+    transform: scale(2);
+    transform: rotate(-30deg);
+  }
+  100% {
+    top: 30%;
+    right: 1500px;
+    z-index: 3;
+  }
+}
+
+.fish {
+  width: 40px;
+  height: 40px;
+  top: 40%;
+  right: -50px;
+  background-image: url(images/fish.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 3;
+  animation: fish-yellow;
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+  animation-delay: 12s;
+}
+@-webkit-keyframes fish-yellow {
+  0% {
+    top: 60%;
+    right: -50px;
+    transform: scale(1);
+    transform: rotateY(10deg);
+  }
+  25% {
+    top: 30%;
+    right: 600px;
+    z-index: 2;
+  }
+  75% {
+    top: 60%;
+    transform: scale(2);
+    transform: rotateY(-180deg);
+  }
+  100% {
+    top: 30%;
+    right: -50px;
+    transform: rotateY(50deg);
+  }
+}
+
+.fish-group {
+  width: 50px;
+  height: 50px;
+  top: 60%;
+  left: -50px;
+  background-image: url(images/fishgroup.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 2;
+  animation: fish-group;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-delay: 8s;
+}
+@-webkit-keyframes fish-group {
+  0% {
+    top: 60%;
+    left: -50px;
+  }
+  25% {
+    top: 30%;
+    left: 800px;
+  }
+  75% {
+    top: 60%;
+    transform: rotateY(-180deg);
+  }
+  100% {
+    top: 30%;
+    left: -100px;
+  }
+}
+
+.fish-group2 {
+  width: 100px;
+  height: 100px;
+  bottom: 20%;
+  left: -100px;
+  background-image: url(images/fishgroup.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 5;
+  animation: fish-group2;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-delay: 5s;
+}
+@-webkit-keyframes fish-group2 {
+  0% {
+    bottom: 20%;
+    left: -100px;
+    transform: rotateY(15deg);
+  }
+  25% {
+    bottom: 60%;
+    left: 500px;
+  }
+  75% {
+    bottom: 30%;
+    transform: rotateY(-50deg);
+    left: 1000px;
+  }
+  100% {
+    bottom: 60%;
+    left: 1600px;
+  }
+}
+
+.octopus {
+  width: 70px;
+  height: 70px;
+  bottom: -30px;;
+  left: 280px;
+  background-image: url(images/octopus.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 3;
+  animation: octopus;
+  animation-duration: 20s;
+  animation-iteration-count: 2;
+  animation-delay: 8s;
+}
+@-webkit-keyframes octopus {
+  0% {
+    left: 280px;
+    bottom: -30px;
+    z-index: 3;
+  }
+  15% {
+    bottom: 300px;
+  }
+  30% {
+    bottom: 100px;
+    transform: scale(2);
+    z-index: 8;
+  }
+  50% {
+    bottom: 500px;
+  }
+  65% {
+    bottom: 300px;
+    z-index: 3;
+  }
+  80% {
+    bottom: 600px;
+    transform: scale(1);
+  }
+  95% {
+    bottom: -100px;
+    left: 1500px;
+  }
+  100% {
+    bottom: -80px;
+    left: 300px;
+  }
+}
+
+.hermi-crab {
+  width: 50px;
+  height: 50px;
+  bottom: 170px;
+  right: -10px;
+  background-image: url(images/hermit-crab.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 2;
+  animation: hermit-crab;
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes hermit-crab {
+  0% {
+    bottom: 170px;
+    right: -10px;
+    transform: scale(1);
+    transform: rotateX(10deg);
+  }
+  50%{
+    right:200px;
+  }
+  25% {
+    right: 200px;
+    transform: scale(1.3);
+    transform: rotateX(-10deg);
+  }
+  100% {
+    right: 400px;
+  }
+}
+
+/* ALGAS */
+
+.seaweed-one {
+  width: 300px;
+  height: 300px;
+  background-image: url(images/seaweed_1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 60%;
+  left: 200px;
+  z-index: 6;
+}
+
+.seaweed-two {
+  width: 150px;
+  height: 150px;
+  background-image: url(images/seaweed_2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 55%;
+  left: 1200px;
+  z-index: 3;
+}
+
+.seaweed-three {
+  width: 100px;
+  height: 100px;
+  background-image: url(images/seaweed_2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 100px;
+  z-index: 2;
+}
+
+.starfish {
+  width: 50px;
+  height: 50px;
+  background-image: url(images/starfish.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation-name: starfish;
+  animation-duration: 60s;
+  animation-iteration-count: 1;
+  top: -20%;
+  left: 600px;
+  z-index: 4;
+}
+@-webkit-keyframes starfish {
+  0% {
+    top: -20%;
+    left: 600px;
+    transform: rotateX(-20deg);
+  }
+  50%{
+    transform: rotateX(-70deg);
+    left: 1000px;
+  }
+  100% {
+    top: 120%;
+    left: 600px;
+    transform: rotateX(-20deg);
+  }
+}
